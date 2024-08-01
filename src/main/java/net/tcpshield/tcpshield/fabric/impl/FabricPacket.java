@@ -5,7 +5,7 @@ import net.tcpshield.tcpshield.fabric.mixin.HandshakeC2SPacketAccessor;
 import net.tcpshield.tcpshield.provider.PacketProvider;
 import net.tcpshield.tcpshield.util.exception.manipulate.PacketManipulationException;
 
-public class FabricPacket implements PacketProvider  {
+public class FabricPacket implements PacketProvider {
 
     private final HandshakeC2SPacket handshake;
 
@@ -15,7 +15,7 @@ public class FabricPacket implements PacketProvider  {
 
     @Override
     public String getPayloadString() {
-        return ((HandshakeC2SPacketAccessor) handshake).getAddress();
+        return HandshakeC2SPacketAccessor.class.cast(handshake).getAddress();
     }
 
     @Override
