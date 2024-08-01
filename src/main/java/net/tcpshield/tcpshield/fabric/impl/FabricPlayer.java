@@ -2,7 +2,7 @@ package net.tcpshield.tcpshield.fabric.impl;
 
 import net.minecraft.network.ClientConnection;
 import net.minecraft.network.packet.c2s.handshake.HandshakeC2SPacket;
-import net.minecraft.text.LiteralText;
+import net.minecraft.text.Text;
 import net.tcpshield.tcpshield.fabric.mixin.ClientConnectionAccessor;
 import net.tcpshield.tcpshield.provider.PlayerProvider;
 
@@ -43,6 +43,6 @@ public class FabricPlayer implements PlayerProvider {
 
     @Override
     public void disconnect() {
-        connection.disconnect(new LiteralText("Connection failed. Please try again or contact an administrator."));
+        connection.disconnect(Text.literal("Connection failed. Please try again or contact an administrator."));
     }
 }

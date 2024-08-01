@@ -21,13 +21,13 @@ buildscript {
 plugins {
     id 'java'
     id 'idea'
-    id 'fabric-loom' version '0.6-SNAPSHOT'
+    id 'fabric-loom' version '1.7-SNAPSHOT'
 }
 
 // --
 // Variables
 // --
-version = '2.8.1'
+version = '2.8.0'
 group = 'net.tcpshield.tcpshield'
 archivesBaseName = 'TCPShield'
 
@@ -107,9 +107,9 @@ dependencies {
     compileOnly group: 'com.velocitypowered', name: 'velocity-api', version: '3.3.0-SNAPSHOT'
 
     // Fabric
-    minecraft "com.mojang:minecraft:1.16.5"
-    mappings "net.fabricmc:yarn:1.16.5+build.5:v2"
-    modImplementation group: 'net.fabricmc', name: 'fabric-loader', version: '0.11.2'
+    minecraft "com.mojang:minecraft:1.21"
+    mappings "net.fabricmc:yarn:1.21+build.9"
+    modImplementation group: 'net.fabricmc', name: 'fabric-loader', version: '0.16.0'
 
     // Testing
     testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.7.0-M1'
