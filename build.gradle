@@ -27,7 +27,7 @@ plugins {
 // --
 // Variables
 // --
-version = '2.8.0'
+version = '2.8.1'
 group = 'net.tcpshield.tcpshield'
 archivesBaseName = 'TCPShield'
 
